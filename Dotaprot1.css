@@ -10,8 +10,10 @@ body{
     }
     
 .contenedor{
-        width: 1000px;
+        width: 90%;
+        max-width: 1000px;
         background: #ccc;
+        margin: 20px auto;
     }
 
 header{
@@ -47,7 +49,7 @@ header{
 
 .Vineta{
         background-image: url("images/Dota\ 2\ Fondo.jpg");
-        width: 500px;
+        width: 50%;
         padding: 20px;
         float: left;
         text-align: center;
@@ -61,8 +63,20 @@ header{
 }
 
 footer{
+    width: 70%;
     clear: both;
     background: #ccc;
     padding: 20px;
     color: #fff;
     }
+
+@media screen and (max-width: 500px) {
+    .Vineta{
+        width: 100%;
+        
+    }
+
+    footer{
+        width: 100%;
+    }
+}
