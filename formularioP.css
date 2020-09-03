@@ -10,7 +10,7 @@ body{
 }
 
 .contenedor{
-    width: 1000px;
+    width: 100%;
     background: #ccc;
 }
 header{
@@ -21,8 +21,8 @@ header{
 
 .LTable{
     background: #fff;
-    width: 500px;
-    padding: 20px;
+    width: 50%;
+    padding: 2%;
     float: left;
 }
 h2{
@@ -36,13 +36,13 @@ table, td, th {
 
 table{
     border-collapse: collapse;
-    width: 480px;
+    width: 98%;
     text-align: center;
     margin-top: 8px;
 }
 
 th, td{
-    padding: 15px 15px;
+    padding: 1.5% 1.5%;
 }
 
 th{
@@ -56,7 +56,7 @@ tr:hover{
 
 .formu{
     background: #fff;
-    width: 500px;
+    width: 50%;
     padding: 20px;
     border-radius: 5px;
     float: left;
@@ -66,8 +66,8 @@ tr:hover{
 .formu input[type="tel"]{
     display: block;
     width: 100%;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 2%;
+    margin-bottom: 2%;
     border-radius: 3px;
     border: 1px solid #226;
     font-family: Arial;
@@ -81,15 +81,15 @@ tr:hover{
 
 .formu input[type="submit"],
 .formu input[type="reset"]{
-    width: 200px;
+    width: 45%;
     background: none;
     border: 1px solid #4fb560;
     color: #4fb560;
-    margin-left: 20px;
-    padding: 10px;
+    margin-left: 2%;
+    padding: 1%;
     cursor: pointer;
     font-size: 16px;
-    border-radius:16px;
+    border-radius:1.6%;
 }
 
 .formu input[type="submit"]:hover,
@@ -97,10 +97,20 @@ tr:hover{
     background: #4fb560;
     color: #fff;
 }
+.formu .error{
+    /*display: none;*/
+    margin-top:2%;
+    border-radius: 3px;
+    background: #CE1818;
+    color: #fff;
+    padding: 1.5% 1%;
+    padding-left: 4%;
+
+}
 
 footer{
     clear: both;
     background: #4d5061;
-    padding: 20px;
+    padding: 2%;
     color: #fff;
 }
