@@ -12,15 +12,17 @@
         </header>
     <div class="LTable">
         <h2 class="TEnc">Tabla de encuesta</h2>
-        <table>
+        <table id="tabla">
+            <thead>
             <tr>
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>DNI</th>
                 <th>Telefono</th>
             </tr>
-
-            <tr>
+            </thead>
+            <tbody>
+            <tr id="00000701">
                 <td>Angel</td>
                 <td>Cayotopa</td>
                 <td>00000701</td>
@@ -54,6 +56,7 @@
                 <td>89040789</td>
                 <td>967946743</td>
             </tr>
+        </tbody>
         </table>
     </div>
 
@@ -63,17 +66,22 @@
             <input type="text" placeholder="Ingrese su nombre" maxlength="58" name="nombre" id="nombre">
             <input type="text" placeholder="Ingrese su apellido" maxlength="58" name="apellido" id="apellido">
             <input type="text" placeholder="Ingrese su DNI" maxlength="8" name="DNI" id="DNI">
-            <input type="tel" placeholder="Ingrese su celular" maxlength="9" name="telcel" id="telcel">
+            <input type="text" placeholder="Ingrese su celular" maxlength="9" name="telcel" id="telcel">
             <input type="reset" value="Borrar">
             <input type="submit" value="Enviar">
 
         </form>
+        <ul class="error" id="error"></ul>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary mr-2" onclick="agregarFila()">Agregar Fila</button>
+            <button type="button" class="btn btn-danger" onclick="eliminarFila()">Eliminar Fila</button>
+        </div>
     </div>
 
     <footer>
         <p>Otome gē sekai wa mobu ni kibishī sekai desu</p>
     </footer>
-
+    <script src="formularioP.js"></script>
     </div>
 </body>
 </html>
