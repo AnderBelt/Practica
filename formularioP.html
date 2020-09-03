@@ -67,14 +67,28 @@
             <input type="text" placeholder="Ingrese su apellido" maxlength="58" name="apellido" id="apellido">
             <input type="text" placeholder="Ingrese su DNI" maxlength="8" name="DNI" id="DNI">
             <input type="text" placeholder="Ingrese su celular" maxlength="9" name="telcel" id="telcel">
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
+            <!-- COMENTE ESA LINEA PORQUE YO AGREGUE UNOS BOTONES SIMILARES, ESTABA BIEN EL TUYO PERO EN LA ACTUALIDAD
+                EL INPUT YA NO SE UTILIZAN BOTONES , LO NORMAL ES QUE SEAN INPUTS TIPO TEXT -->
+            <!-- <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar"> -->
+
+            <!-- CODIGO ANGEL : REVISA EL ARCHIVO CSS DEL FORMULARIO , AHI ESTA UNA FORMA MAS SIMPLE DE COMO DECORAR
+                LOS BOTONES -->
+            <button type="button" onclick="eliminarFila()">Borrar</button>
+            <button type="button" onclick="agregarFila()">Enviar</button>
 
         </form>
-        <ul class="error" id="error"></ul>
+
+        <div class="erroDiv">
+            <h4>En caso de errores:</h4>
+            <ul class="error" id="error"></ul>
+        </div>
+
         <div class="form-group">
-            <button type="button" class="btn btn-primary mr-2" onclick="agregarFila()">Agregar Fila</button>
-            <button type="button" class="btn btn-danger" onclick="eliminarFila()">Eliminar Fila</button>
+            <!-- EL  btn btn-primary DE LAS CLASES DE LOS BOTONES QUE ESTAN AHI ES PARTE DE BOOTSTRAP, NO SIRVE DE NADA
+                SI NO TIENES ESA LIBRERIA-->
+            <!-- <button type="button" class="btn btn-primary mr-2" onclick="agregarFila()">Agregar Fila</button>
+            <button type="button" class="btn btn-danger" onclick="eliminarFila()">Eliminar Fila</button> -->
         </div>
     </div>
 

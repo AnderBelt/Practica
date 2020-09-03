@@ -97,6 +97,7 @@ tr:hover{
     background: #4fb560;
     color: #fff;
 }
+
 .formu .error{
     /*display: none;*/
     margin-top:2%;
@@ -105,7 +106,11 @@ tr:hover{
     color: #fff;
     padding: 1.5% 1%;
     padding-left: 4%;
-
+    
+    /*TRATA DE MOSTRAR UN ESPACIO NECESARIO COMO SI HUBIERAN LETRAS.
+        NO UN ESPACIO PEQUEÑO*/
+    height: 35px;;
+    
 }
 
 footer{
@@ -113,4 +118,35 @@ footer{
     background: #4d5061;
     padding: 2%;
     color: #fff;
+    position: fixed;
+    
+    /*AGREGUE ESTO AL FOOTER*/
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*OBSERVACIONES DE COMO EFICIENTAR EL CSS PARA BOTONES*/
+.formu button{
+    width: 45%;
+    background: none;
+    border: 1px solid #4fb560;
+    color: #4fb560;
+    margin-left: 2%;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius:1.6%;
+}
+
+.formu button:hover{
+    background: #4fb560;
+    color: #fff;
+}
+
+/*DANDOLE ESTILOS AL DIV DE ERROR*/
+
+.erroDiv{
+    margin: 20px;
 }
