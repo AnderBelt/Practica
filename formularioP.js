@@ -71,6 +71,10 @@ function agregarFila(){
     validarFono(e);
   }
 
+  function validarDNID(e){
+    error.innerHTML='';
+    validarDNI(e);
+  }
    /*function eliminarFila(){
     var table = document.getElementById("tabla");
     var d_nested = table.indexOf(getElementById="00000701");
@@ -89,7 +93,7 @@ function agregarFila(){
 
   function eliminarFila(){
     var table = document.getElementById("tabla");
-    validarDNI();
+    validarDNID();
     var comp = dni.value;
     var ind = tablaM.findIndex(fil => fil.DNI === comp);
     if (ind != -1){
@@ -121,6 +125,6 @@ function agregarFila(){
     do{
       var temp = revert.pop();
       var fil = "<tr><td>"+temp.Nombre+"</td><td>"+temp.Apellido+"</td><td>"+temp.DNI+"</td><td>"+temp.Telefono+"</td></tr>";
-      document.getElementById("tabla").insertRow(-1).innerHTML = fil;
+      document.getElementById("tablabody").insertRow(-1).innerHTML = fil;
     }while(revert.length!=0);
   }
