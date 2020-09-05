@@ -94,12 +94,13 @@ function agregarFila(){
     var ind = tablaM.findIndex(fil => fil.DNI === comp);
     if (ind != -1){
        tablaM.splice(ind, 1);
+       var Tsusti = tablaM.map(function(fila){
+        return fila;
+      })
+      revert = Tsusti.reverse();
+      ActualizarT();
     }
-    var Tsusti = tablaM.map(function(fila){
-      return fila;
-    })
-    revert = Tsusti.reverse();
-    ActualizarT();
+
 
     /*
     var rowCount = table.rows.length;
