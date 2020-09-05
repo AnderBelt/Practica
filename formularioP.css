@@ -22,9 +22,11 @@ header{
 .LTable{
     background: #fff;
     width: 50%;
+    height: 400px;
     padding: 2%;
     float: left;
-}
+ }
+
 h2{
     font-size: 20px;
     text-align: center;
@@ -150,3 +152,9 @@ footer{
 .erroDiv{
     margin: 20px;
 }
+
+.tscroll {
+    height:90%;
+    overflow:auto;  
+    margin-top:20px;
+  }
