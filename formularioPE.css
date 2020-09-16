@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    background: #ccc;
+}
+header{
+    background: #4fb560;
+    font-weight: bold;
+    text-align: center;
+}
+
+.LTable{
+    background: #fff;
+    width: 50%;
+    height: 400px;
+    padding: 2%;
+    float: left;
+ }
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+table{
+    border-collapse: collapse;
+    width: 98%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+th, td{
+    padding: 1.5% 1.5%;
+}
+
+th{
+    background:#9DFAF1;
+    color: #fff;
+}
+
+tr:hover{
+    background: #e5e5e5;
+}
+
+.formu{
+    background: #fff;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+}
+
+.formu input[type="text"],
+.formu input[type="tel"]{
+    display: block;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 3px;
+    border: 1px solid #226;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.formu input[type="text"]:focus,
+.formu input[type="tel"]:focus{
+    border: 2px solid #4fb560;
+}
+
+.formu input[type="submit"],
+.formu input[type="reset"]{
+    width: 45%;
+    background: none;
+    border: 1px solid #4fb560;
+    color: #4fb560;
+    margin-left: 2%;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius:1.6%;
+}
+
+.formu input[type="submit"]:hover,
+.formu input[type="reset"]:hover{
+    background: #4fb560;
+    color: #fff;
+}
+
+.formu .error{
+    /*display: none;*/
+    margin-top:2%;
+    border-radius: 3px;
+    background: #CE1818;
+    color: #fff;
+    padding: 1.5% 1%;
+    padding-left: 4%;
+    
+    /*TRATA DE MOSTRAR UN ESPACIO NECESARIO COMO SI HUBIERAN LETRAS.
+        NO UN ESPACIO PEQUEÑO*/
+    height: 35px;;
+    
+}
+
+footer{
+    clear: both;
+    background: #4d5061;
+    padding: 2%;
+    color: #fff;
+    position: fixed;
+    
+    /*AGREGUE ESTO AL FOOTER*/
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*OBSERVACIONES DE COMO EFICIENTAR EL CSS PARA BOTONES*/
+.formu button{
+    width: 45%;
+    background: none;
+    border: 1px solid #4fb560;
+    color: #4fb560;
+    margin-left: 2%;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius:1.6%;
+}
+
+.formu button:hover{
+    background: #4fb560;
+    color: #fff;
+}
+
+/*DANDOLE ESTILOS AL DIV DE ERROR*/
+
+.erroDiv{
+    margin: 20px;
+}
+
+.tscroll {
+    height:90%;
+    overflow:auto;  
+    margin-top:20px;
+  }
